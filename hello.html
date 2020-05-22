@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src *;"> -->
+
+</head>
+
+
+<body id="infoSection" style="background:black; width: 300px; height: 100px; " >
+
+		    <h3 style="margin:10px; color: white; " align="center" >Linker v1.0</h3>
+
+
+			<div class="save">
+					<button class="btn btn-primary" style="width:80%; margin:2% 10%;" id="save" type="button">Save Opened Pages</button>
+			</div>
+
+			
+
+			<div class="back" style="display: none;">
+					<button class="btn btn-primary" style="width:80%; margin:2% 10%;" id="back" type="button">Done</button>
+			</div>
+
+
+			<div style="display: none;" class="create">
+				<div>
+						<input class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" placeholder="Enter Group Name" id="name" type="text"/>
+
+						<div>              
+							<div  style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey;  display: none;" align="center" id="error" > </div>
+				        </div>
+
+				</div>
+				<div align="center" style="margin-bottom:8%;" >
+						<button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="create" type="button">Save</button>
+						<button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="cancel" type="button">Cancel</button>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="open">
+					<button class="btn btn-warning" style="width:80%; margin:2% 10%;" id="open"  type="button">Open Saved Pages</button>
+			</div>
+
+
+			<div style="display: none;" class="selectgroup">
+				
+				<div>
+						<select class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" id="selectgroup" type="select">
+					     </select>
+
+						<div>              
+							<div  style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey;  display: none;" align="center" id="select_error" > </div>
+				        </div>
+				</div>
+
+
+				<div align="center" style="margin-bottom:8%;" >
+						<button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="openurl" type="button">Open</button>
+						<button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="cancelurl" type="button">Cancel</button>
+				</div>
+			</div>
+
+
+
+
+
+
+			<div class="delete">
+					<button class="btn btn-danger" style="width:80%; margin:2% 10% 5% 10%;" id="delete"  type="button">Delete Saved Pages</button>
+			</div>
+
+
+			<div style="display: none;" class="deletegroup">
+				
+				<div>
+						<select class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" id="select_delete_group" type="select">
+					     </select>
+
+						<div>              
+							<div  style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey;  display: none;" align="center" id="delete_error" > </div>
+				        </div>
+				</div>
+
+
+				<div align="center" style="margin-bottom:8%;" >
+						<button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="deletegroup" type="button">Delete</button>
+						<button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="deletecancel" type="button">Cancel</button>
+				</div>
+			</div>
+
+
+
+</body>
+</html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<script src="background.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<script src="jquery.js"></script>

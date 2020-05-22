@@ -1,0 +1,58 @@
+{
+    "name"            : "Linker v1.0  ctrl+shift+L",
+    "description" : "Linker Plugin To Simplify Your Work Of Bookmarking Every Useful Opened Web Pages",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "hello.html",
+      "default_icon": "logo.png"
+    },
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+L",
+          "mac": "MacCtrl+Shift+L"
+        },
+        "description": "Opens Linker"
+      }
+    },
+  
+    "permissions": [
+        "tabs"
+      ]
+  }
+
+
+//   {
+//     "manifest_version": 2,
+//     "name"            : "Linker Extension",
+//     "version"         : "1.0",
+//     "permissions": [
+//         "https://cdn.jsdelivr.net/npm/vue/dist/vue.js",
+//         "tabs"
+//     ],
+//     "background": {
+//         "scripts": ["background.js"],
+//         "persistent": false
+//       },
+//     "description"     : "Linker",
+//     "icons": {
+//         "16"    : "logo.png",
+//         "48"    : "logo.png",
+//         "128"   : "logo.png"
+//     },
+//     "browser_action": {
+//       "default_popup": "hello.html",
+//       "default_icon": "logo.png"
+//     },
+//     "commands": {
+//       "_execute_browser_action": {
+//         "suggested_key": {
+//           "default": "Ctrl+Shift+L",
+//           "mac": "MacCtrl+Shift+L"
+//         },
+//         "description": "Opens Linker"
+//       }
+//     },
+//     "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
+// }
