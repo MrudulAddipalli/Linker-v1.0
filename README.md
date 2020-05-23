@@ -36,6 +36,8 @@ close/open webpages that you need to remove/add in the specific already created 
 in place of "Group Name" add same "Group Name" that you want to update.
 You can cancel process , by clicking "Cancel".
 
+All crud operations implemented in one html file
+
 
 How to Install :
 step 1 : Clone/download zip of this project
