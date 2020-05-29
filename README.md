@@ -39,12 +39,22 @@ All crud operations implemented using javascript and jquery library.
 
 
 How to Install In Chrome :
-step 1 : Clone/download zip of this project
-step 1.1 : Unzip downloaded file
-step 2 : Open chrome browser
-step 3 : Click 3 dots icon from top right hand side corner
-step 4 : Select "More Tools"
-step 5 : Select "Entension"
-step 6 : Click "Load Unpacked" from top left hand side corner
-step 7 : Locate Cloned/Unzipped FOlder
-step 8 : Now The Plugin Is Ready To Rock !!!
+step 1 : Clone/download zip of this project.
+
+step 1.1 : Unzip downloaded file.
+
+step 2 : Open chrome browser.
+
+step 3 : Click 3 dots icon from top right hand side corner.
+
+step 4 : Select "More Tools".
+
+step 5 : Select "Entension".
+
+step 6 : Click "Load Unpacked" from top left hand side corner.
+
+step 7 : Locate Cloned/Unzipped FOlder.
+
+step 8 : Now The Plugin Is Ready To Rock !!!.
+
+
