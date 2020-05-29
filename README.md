@@ -4,16 +4,15 @@ Chrome Extension/Plugin made for simplifying browser experience.
 Every day user open similar websites which he can open by
 1) Typing URL
 2) Creating Bookmark
-3) Opening Website From URL
+3) Opening Website From History
 
-but imagine if we have 10-15 websites that we need to open on regular basis , then opening them by following those steps will be 
-time consuming and need to remember what to open?
+but imagine if we have 10-15 websites opened in different chrome window that we need to open on regular basis , then opening them by following those steps will be time consuming and need to remember what was opened what need to be opened ?
 
-This plugin creates Group of all opened webpages and clubs them under one Group , we can create unlimited groups with unlimited webpages, 
+This plugin Creates Group Of All Opened Webpages Under Opened Window Into One Named Group , We Can Create Unlimited Groups with Unlimited Webpages, 
 
 This plugin will help you to
-1) Save URL Group
-2) Open All URL's Under Particular Group
+1) Save All Opened URL's Of Opened Window In One Group
+2) Open All Unopened URL's Under Particular Group
 3) Delete Group
 4) Update Group
 
@@ -36,10 +35,10 @@ close/open webpages that you need to remove/add in the specific already created 
 in place of "Group Name" add same "Group Name" that you want to update.
 You can cancel process , by clicking "Cancel".
 
-All crud operations implemented in one html file
+All crud operations implemented using javascript and jquery library.
 
 
-How to Install :
+How to Install In Chrome :
 step 1 : Clone/download zip of this project
 step 1.1 : Unzip downloaded file
 step 2 : Open chrome browser
