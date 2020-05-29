@@ -51,10 +51,14 @@ step 4 : Select "More Tools".
 
 step 5 : Select "Entension".
 
-step 6 : Click "Load Unpacked" from top left hand side corner.
+step 6 : Check "Developer Mode" from top right hand side.
 
-step 7 : Locate Cloned/Unzipped FOlder.
+step 7 : Click "Load Unpacked" from top left hand side corner.
 
-step 8 : Now The Plugin Is Ready To Rock !!!.
+step 8 : Locate Cloned/Unzipped Parent FOlder.
+
+step 9 : Click "OK".
+
+step 10 : Now Your "Linker" Plugin Is Ready To Rock !!!.
 
 
