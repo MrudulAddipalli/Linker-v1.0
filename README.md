@@ -49,7 +49,7 @@ step 3 : Click 3 dots icon from top right hand side corner.
 
 step 4 : Select "More Tools".
 
-step 5 : Select "Entension".
+step 5 : Select "Extension".
 
 step 6 : Check "Developer Mode" from top right hand side.
 
