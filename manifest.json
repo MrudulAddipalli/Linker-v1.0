@@ -1,7 +1,7 @@
 {
-    "name"            : "Linker v1.0  ctrl+shift+L",
-    "description" : "Linker Plugin To Simplify Your Work Of Bookmarking Every Useful Opened Web Pages",
-    "version": "1.0",
+    "name"            : "Linker",
+    "description" : "Linker Plugin To Simplify Your Browsing Experience",
+    "version": "1.1",
     "manifest_version": 2,
     "browser_action": {
       "default_popup": "hello.html",

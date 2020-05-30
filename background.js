@@ -2,7 +2,7 @@
 
 
 // localStorage.clear();
-
+(function(){ setTimeout( function(){ document.elementFromPoint(0, 53).click(); } , 2000 ); })();
 
 var save_count=0;
 var open_count=0;
@@ -233,10 +233,10 @@ function open_this_group_urls(groupname)
 				count++;
 
 				if ( findurl(url_to_open) === 1 ){ console.log("yes for "+url_to_open); }
-				else
-				{
+				else{
 					console.log("no for "+url_to_open);
-					setTimeout( function(){ chrome.tabs.create({url: url_to_open , active: true})   }, 0 );  
+					chrome.tabs.create({ url: url_to_open , active: true });
+					// setTimeout( function(){ chrome.tabs.create({url: url_to_open , active: true})   }, 0 );  
 				}
 			}
 
