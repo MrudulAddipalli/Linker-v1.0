@@ -4,14 +4,20 @@
 <head>
 	<meta charset="utf-8" />
 
-	<link rel="stylesheet" href="bootstrap.min.css" >
+	<link defer rel="stylesheet" href="bootstrap.min.css" >
 
 </head>
 
 
 <body id="infoSection" style="background:black; width: 300px; height: 100px; " >
 
-		    <h3 style="margin:10px; color: white; " align="center" >Linker v1.1</h3>
+			<div style="margin:20px;" align="center">
+			    <img src="logo.png" style="width:40px; height: 40px; display: inline-block;"/>
+			    <h3 style=" color: white; display: inline-block;" >Linker v1.1</h3>
+			</div>
+
+
+
 
 
 			<div class="save">
@@ -45,7 +51,7 @@
 
 
 			<div class="open">
-					<button class="btn btn-warning" style="width:80%; margin:2% 10%;" id="open"  type="button">Open Saved Pages</button>
+					<button class="btn btn-warning" style="width:80%; margin:2% 10%; " id="open"  type="button">Open Saved Pages</button>
 			</div>
 
 
@@ -73,7 +79,7 @@
 
 
 			<div class="delete">
-					<button class="btn btn-danger" style="width:80%; margin:2% 10% 5% 10%;" id="delete"  type="button">Delete Saved Pages</button>
+					<button class="btn btn-danger" style="width:80%; margin:2% 10% 10% 10%;" id="delete"  type="button">Delete Saved Pages</button>
 			</div>
 
 
@@ -100,6 +106,5 @@
 </body>
 </html>
 
-<script src="background.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-<script src="jquery.js"></script>
+<script defer src="jquery.js"></script>
+<script defer src="background.js"></script>
