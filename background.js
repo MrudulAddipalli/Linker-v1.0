@@ -224,6 +224,7 @@ $('document').ready(function(){
 
 				function open_this_group_urls(groupname) 
 				{
+						
 						urls = localStorage.getItem(groupname).split('[]');   // gives first 0 index null
 						urls.map( (url_to_open) => {
 	
