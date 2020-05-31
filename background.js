@@ -114,8 +114,7 @@ $('document').ready(function(){
 						    }
 						});
 						
-					    setTimeout( function() {  localStorage.removeItem(name);  } , 1000 );     // remove savedurls 
-						setTimeout( function() {  localStorage.setItem(name.replace(" ","_")+"[$$$]", urls_string );  } , 1000 );
+						setTimeout( function() {  localStorage.setItem(name.replace(" ","_"), urls_string );  } , 1000 );
 
 
 
@@ -185,24 +184,11 @@ $('document').ready(function(){
 
 					for (var i = 0; i < localStorage.length; i++)
 						{
-							if( localStorage.key(i).toString().includes('[$$$]') )
-							{
 							    var key = localStorage.key(i).toString();
-							    k = key.replace('[$$$]','');
-							    $("#selectgroup").append( '<option value='+key+'>'+k+'</option>' );
-							}
+							    $("#selectgroup").append( '<option value='+key+'>'+key+'</option>' );
 						}
 
 				}
-
-
-
-
-
-
-
-
-
 
 
 				function openurl() 
@@ -224,7 +210,6 @@ $('document').ready(function(){
 
 				function open_this_group_urls(groupname) 
 				{
-						
 						urls = localStorage.getItem(groupname).split('[]');   // gives first 0 index null
 						urls.map( (url_to_open) => {
 	
@@ -307,12 +292,8 @@ $('document').ready(function(){
 
 					for (var i = 0; i < localStorage.length; i++)
 						{
-							if( localStorage.key(i).toString().includes('[$$$]') )
-							{
 							    var key = localStorage.key(i).toString();
-							    k = key.replace('[$$$]','');
-							    $("#select_delete_group").append( '<option value='+key+'>'+k+'</option>' );
-							}
+							    $("#select_delete_group").append( '<option value='+key+'>'+key+'</option>' );
 						}
 
 				}
