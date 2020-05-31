@@ -224,17 +224,11 @@ $('document').ready(function(){
 
 				function open_this_group_urls(groupname) 
 				{
-
-						var count = 0;
-
 						urls = localStorage.getItem(groupname).split('[]');   // gives first 0 index null
-
 						urls.map( (url_to_open) => {
-
+	
 							if(url_to_open!=="")  // gives first 0 index null
 							{
-								count++;
-
 								if ( findurl(url_to_open) === 1 ){ console.log("yes for "+url_to_open); }
 								else{
 									console.log("no for "+url_to_open);
@@ -244,7 +238,6 @@ $('document').ready(function(){
 							}
 
 						} );
-
 
 						$("#openurl").text("Open");
 						document.getElementById("openurl").disabled = false;
