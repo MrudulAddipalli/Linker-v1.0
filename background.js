@@ -232,7 +232,7 @@ $('document').ready(function(){
 
 						$(".back").show();  // Done
 
-						$("#back").text("All URL's Are Opened");
+						$("#back").text("All Tab's Are Opened");
 
 				}
 
