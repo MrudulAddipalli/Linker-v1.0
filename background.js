@@ -7,11 +7,7 @@ $('document').ready(function(){
 // $('#infoSection').append('<h3 style="margin:10px; color: white; " align="center" >Linker v1.1</h3><div class="save"><button class="btn btn-primary" style="width:80%; margin:2% 10%;" id="save" type="button">Save Opened Pages</button></div><div class="back" style="display: none;"><button class="btn btn-primary" style="width:80%; margin:2% 10%;" id="back" type="button">Done</button></div><div style="display: none;" class="create"><div><input class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" placeholder="Enter Group Name" id="name" type="text"/><div> <div style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey; display: none;" align="center" id="error" > </div></div></div><div align="center" style="margin-bottom:8%;" ><button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="create" type="button">Save</button><button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="cancel" type="button">Cancel</button></div></div><div class="open"><button class="btn btn-warning" style="width:80%; margin:2% 10%; " id="open" type="button">Open Saved Pages</button></div><div style="display: none;" class="selectgroup"><div><select class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" id="selectgroup" type="select"> </select><div> <div style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey; display: none;" align="center" id="select_error" > </div></div></div><div align="center" style="margin-bottom:8%;" ><button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="openurl" type="button">Open</button><button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="cancelurl" type="button">Cancel</button></div></div><div class="delete"><button class="btn btn-danger" style="width:80%; margin:2% 10% 5% 10%;" id="delete" type="button">Delete Saved Pages</button></div><div style="display: none;" class="deletegroup"><div><select class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" id="select_delete_group" type="select"> </select><div> <div style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey; display: none;" align="center" id="delete_error" > </div></div></div><div align="center" style="margin-bottom:8%;" ><button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="deletegroup" type="button">Delete</button><button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="deletecancel" type="button">Cancel</button></div></div>');
 // $('#infoSection').append('<div style="margin:20px;" align="center"> <img src="logo.png" style="width:40px; height: 40px; display: inline-block;"/> <h3 style=" color: white; display: inline-block;" >Linker v1.1</h3></div><div class="save"><button class="btn btn-primary" style="width:80%; margin:2% 10%;" id="save" type="button">Save Opened Pages</button></div><div class="back" style="display: none;"><button class="btn btn-primary" style="width:80%; margin:2% 10%;" id="back" type="button">Done</button></div><div style="display: none;" class="create"><div><input class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" placeholder="Enter Group Name" id="name" type="text"/><div> <div style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey; display: none;" align="center" id="error" > </div></div></div><div align="center" style="margin-bottom:8%;" ><button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="create" type="button">Save</button><button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="cancel" type="button">Cancel</button></div></div><div class="open"><button class="btn btn-warning" style="width:80%; margin:2% 10%; " id="open" type="button">Open Saved Pages</button></div><div style="display: none;" class="selectgroup"><div><select class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" id="selectgroup" type="select"> </select><div> <div style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey; display: none;" align="center" id="select_error" > </div></div></div><div align="center" style="margin-bottom:8%;" ><button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="openurl" type="button">Open</button><button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="cancelurl" type="button">Cancel</button></div></div><div class="delete"><button class="btn btn-danger" style="width:80%; margin:2% 10% 10% 10%;" id="delete" type="button">Delete Saved Pages</button></div><div style="display: none;" class="deletegroup"><div><select class="btn btn-info" style="width:80%; margin:2% 10%; margin-bottom:5%; background-color: white; color:black;" id="select_delete_group" type="select"> </select><div> <div style="width:80%; margin:0% 10%; margin-bottom:5%; color: grey; display: none;" align="center" id="delete_error" > </div></div></div><div align="center" style="margin-bottom:8%;" ><button class="btn btn-primary" style="width:35%; margin-right:4%; display: inline-block;" id="deletegroup" type="button">Delete</button><button class="btn btn-danger" style="width:35%; margin-left:4%; display: inline-block;" id="deletecancel" type="button">Cancel</button></div></div>');
 
-				var save_count=0;
-				var open_count=0;
-
 				var urls_string = '';
-				var urls
 
 				var found = false;
 
@@ -38,24 +34,17 @@ $('document').ready(function(){
 				var cancel_btn = document.getElementById("cancel");
 				cancel_btn.addEventListener("click", cancel);
 
-
-
 				var back_btn = document.getElementById("back");
 				back_btn.addEventListener("click", back);
-
 
 				var openurl_btn = document.getElementById("openurl");
 				openurl_btn.addEventListener("click", openurl);
 
-
 				var cancelurl_btn = document.getElementById("cancelurl");
 				cancelurl_btn.addEventListener("click", cancelurl);
 
-
-
 				var delete_btn = document.getElementById("delete");
 				delete_btn.addEventListener("click", deletex);
-
 
 				var deletecancel_btn = document.getElementById("deletecancel");
 				deletecancel_btn.addEventListener("click", deletecancel);
@@ -65,8 +54,6 @@ $('document').ready(function(){
 
 				var deletecancel_btn = document.getElementById("deletecancel");
 				deletecancel_btn.addEventListener("click", deletecancel);
-
-
 
 				function save() 
 				{
@@ -86,9 +73,6 @@ $('document').ready(function(){
 					else if(name.length>35){   $('#error').append("Group Name Length Should Not Exceed 30 Characters").show(); }
 					else
 					{
-						// $(".save").show();
-						// $(".open").show();
-						// $('.create').hide();
 
 						$("#create").text("Wait ...");
 						document.getElementById("create").disabled = true;
@@ -182,7 +166,8 @@ $('document').ready(function(){
 					$("#selectgroup").empty();
 					$("#selectgroup").append('<option selected>Select Group Name</option>');
 
-					for (var i = 0; i < localStorage.length; i++)
+					let len = localStorage.length;
+					for (var i = 0; i < len; i++)
 						{
 							    var key = localStorage.key(i).toString();
 							    $("#selectgroup").append( '<option value='+key+'>'+key+'</option>' );
@@ -232,7 +217,7 @@ $('document').ready(function(){
 
 						$(".back").show();  // Done
 
-						$("#back").text("All Tab's Are Opened");
+						$("#back").text("All Pages Are Opened");
 
 				}
 
@@ -259,8 +244,8 @@ $('document').ready(function(){
 				function findurl(current_stored_url) 
 				{
 				    found = false ;
-
-					for (var i=0; i < tab_opened.length; i++) 
+				    let len = tab_opened.length;
+					for (var i=0; i < len; i++) 
 				    {
 				        if ( current_stored_url.toString().includes( tab_opened[i].url.toString() )  ) 
 				        {
@@ -290,7 +275,8 @@ $('document').ready(function(){
 					$("#select_delete_group").empty();
 					$("#select_delete_group").append('<option selected>Select Group Name</option>');
 
-					for (var i = 0; i < localStorage.length; i++)
+					let len = localStorage.length;
+					for (var i = 0; i < len; i++)
 						{
 							    var key = localStorage.key(i).toString();
 							    $("#select_delete_group").append( '<option value='+key+'>'+key+'</option>' );
